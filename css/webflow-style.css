@@ -2071,11 +2071,12 @@ textarea.w-input, textarea.w-select {
   --walsh--black: #2c2c2c;
   --lynx--black: #1f2022;
   --lynx--white: white;
+  --walsh--walsh-mid-green: #47888a;
+  --snow: #fff9f5;
   --lynx--medium-purple: #8979ec;
   --lynx--grey: #797c83;
   --cyan: #69fdef;
   --gold: #f5c830;
-  --snow: #fff9f5;
   --walsh--walsh-dark-green: #204f58;
 }
 
@@ -3090,7 +3091,7 @@ a {
 
 .heading-2 {
   color: var(--black);
-  text-align: center;
+  text-align: left;
   letter-spacing: -1px;
   margin-top: 0;
   margin-bottom: 0;
@@ -6729,9 +6730,11 @@ a {
 
 .walsh-image-logo {
   object-fit: contain;
-  width: 100%;
-  max-width: 132px;
-  max-height: 24px;
+  width: 132px;
+  max-width: 150px;
+  height: 50px;
+  max-height: 70px;
+  font-size: 30px;
 }
 
 .walsh-text-small-left {
@@ -6855,6 +6858,189 @@ a {
   height: auto;
   padding: 4em 0 4em 4em;
   display: flex;
+}
+
+.walsh-logo-wrapper-green {
+  box-shadow: 0 1px 0 0 var(--walsh--walsh-mid-green), inset 1px 1px 0 0 var(--walsh--walsh-mid-green);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8em;
+  display: flex;
+}
+
+.walsh-main-grid-no-gap-2 {
+  grid-column-gap: 0em;
+  grid-row-gap: 0em;
+  background-color: #fcfcfc;
+  grid-template-rows: 110px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  align-items: start;
+  width: 100%;
+  position: relative;
+}
+
+.walsh-background-darkgreen {
+  background-color: var(--snow);
+  position: relative;
+}
+
+.walsh-icon-arrow-flip-3 {
+  height: 12px;
+}
+
+.walsh-arrow-wrapper-3 {
+  grid-row-gap: 0px;
+  flex-direction: column;
+  flex: none;
+  align-items: center;
+  height: 12px;
+  display: flex;
+  overflow: hidden;
+}
+
+.walsh-label-button-3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.2em;
+}
+
+.walsh-button-label-white-w {
+  z-index: 4;
+  grid-column-gap: 8px;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.walsh-link-block-white {
+  color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  transition: box-shadow .2s cubic-bezier(.645, .045, .355, 1);
+  box-shadow: inset 0 -3px #ffffff1a;
+}
+
+.walsh-link-block-white:hover {
+  color: #444;
+  box-shadow: inset 0 -3px #b0eab9;
+}
+
+.walsh-button-hover-fill-3 {
+  background-color: #000;
+  border-radius: 100%;
+  width: 5em;
+  height: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  inset: -100% auto auto -46%;
+}
+
+.walsh-button-label-wrapper-3 {
+  z-index: 4;
+  grid-column-gap: 8px;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.walsh-link-block-green-3 {
+  background-color: var(--walsh--walsh-light-green);
+  color: #000;
+  text-align: center;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 32px;
+  text-decoration: none;
+  transition: background-color .2s cubic-bezier(.645, .045, .355, 1);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.walsh-link-block-green-3:hover {
+  color: #000;
+  background-color: #ffbba6;
+}
+
+.walsh-hero-div-block-2 {
+  grid-column-gap: 1.25em;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.walsh-text-burst {
+  color: #b0ebb9;
+  background-image: url("../images/scribble-burst.svg");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto 38%;
+  padding-bottom: .2em;
+  padding-right: .1em;
+  display: inline-block;
+}
+
+.walsh-text-lightgreen {
+  color: #b0ebb9;
+}
+
+.walsh-heading-xlarge-white {
+  color: #000;
+  letter-spacing: -.02em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 6.65em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.walsh-hero-center-wrapper {
+  grid-row-gap: 2em;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 6em 3em;
+  display: flex;
+}
+
+.walsh-hero-frame-image {
+  border-radius: 12px;
+  flex: none;
+  width: 100%;
+  max-width: 16em;
+  height: 16em;
+  overflow: hidden;
+}
+
+.walsh-hero-frame-image-med {
+  border-radius: 8px;
+  flex: none;
+  width: 100%;
+  max-width: 20em;
+  overflow: hidden;
+}
+
+.walsh-main-grid-3 {
+  grid-column-gap: 2.2em;
+  grid-row-gap: 2.2em;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: start;
+  width: 100%;
+  position: relative;
+}
+
+.walsh-hero-wrapper {
+  padding: 2em 5em 5em;
 }
 
 @media screen and (min-width: 1440px) {
@@ -8975,6 +9161,45 @@ a {
     max-width: none;
     padding: 4em 4em 0;
   }
+
+  .walsh-main-grid-no-gap-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .walsh-button-hover-fill-3 {
+    display: none;
+  }
+
+  .walsh-hero-div-block-2 {
+    justify-content: center;
+  }
+
+  .walsh-text-burst {
+    background-size: auto 60%;
+  }
+
+  .walsh-heading-xlarge-white {
+    font-size: 4em;
+  }
+
+  .walsh-hero-center-wrapper {
+    grid-row-gap: 1.25em;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .walsh-main-grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .walsh-hero-wrapper {
+    padding-top: 7.2em;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -9848,6 +10073,24 @@ a {
     padding-top: 4em;
     padding-bottom: 0;
     padding-right: 4em;
+  }
+
+  .walsh-logo-wrapper-green {
+    height: 10em;
+  }
+
+  .walsh-heading-xlarge-white {
+    font-size: 3em;
+  }
+
+  .walsh-hero-center-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .walsh-main-grid-3 {
+    grid-column-gap: 1em;
+    grid-row-gap: 2em;
   }
 }
 
@@ -10733,6 +10976,54 @@ a {
 
   .walsh-inner-column-left {
     padding: 30px 30px 0;
+  }
+
+  .walsh-logo-wrapper-green {
+    min-width: 35vw;
+    height: 8em;
+  }
+
+  .walsh-label-button-3 {
+    font-size: 16px;
+  }
+
+  .walsh-link-block-green-3 {
+    padding-left: 30px;
+    padding-right: 25px;
+  }
+
+  .walsh-hero-div-block-2 {
+    grid-row-gap: 1.25em;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .walsh-text-burst {
+    background-size: auto 56%;
+  }
+
+  .walsh-hero-center-wrapper {
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+  }
+
+  .walsh-hero-frame-image {
+    max-width: 8em;
+    height: 8em;
+  }
+
+  .walsh-hero-frame-image-med {
+    max-width: 14em;
+  }
+
+  .walsh-hero-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
