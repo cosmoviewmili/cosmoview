@@ -6189,7 +6189,7 @@ a {
 .walsh-card-wrapper-image {
   justify-content: center;
   align-self: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   height: 25em;
   display: flex;
@@ -6582,6 +6582,7 @@ a {
 }
 
 .lynx-content-hero {
+  color: #000;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -6589,7 +6590,8 @@ a {
   max-width: 1392px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 0;
   display: flex;
 }
 
@@ -6840,12 +6842,14 @@ a {
   max-width: 1480px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 40px;
   display: flex;
   overflow: hidden;
 }
 
 .walsh-container-3 {
   z-index: 2;
+  color: #000;
   flex: none;
   width: 100%;
   max-width: 1480px;
@@ -7475,6 +7479,16 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+}
+
+.image-121, .image-122 {
+  border-radius: 20px;
+}
+
+.heading-18 {
+  font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+  font-size: 56px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 1440px) {
